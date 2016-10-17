@@ -23,3 +23,7 @@
    "                              xxxxx           xxxxxx xxxxxxx                    ",
    "                                                                                ",
    "                                                                                "],
+    ];
+
+if (typeof module != "undefined" && module.exports)
+  module.exports = GAME_LEVELS;
