@@ -282,7 +282,7 @@ Lava.prototype.act = function(step, level) {
   else if (this.repeatPos)
     this.pos = this.repeatPos;
   else
-    this.speed = this.speed.times(-1);
+    this.speed = this.speed.times(-1.5);
 };
 
 
@@ -302,7 +302,7 @@ var maxStep = 0.05;
 var playerXSpeed = 7;
 
 Player.prototype.moveX = function(step, level, keys) {
-  this.speed.x = 8;
+  this.speed.x = 10;
   
 
   var motion = new Vector(this.speed.x * step, 0);
@@ -318,9 +318,9 @@ Player.prototype.moveX = function(step, level, keys) {
     this.pos = newPos;
 };
 
-var gravity = 30;
-var jumpSpeed = 17;
-
+var gravity = 60;
+var jumpSpeed = 20;
+8
 Player.prototype.moveY = function(step, level, keys) {
   // Accelerate player downward (always)
   this.speed.y += step * gravity;;
